@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Netflix India - Watch TV Shows</title>
+    <link rel="stylesheet" href="style.css">
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            document.querySelector(".btn").addEventListener("click", function(event) {
+                event.preventDefault();
+                document.querySelector(".form-wrapper").scrollIntoView({ behavior: 'smooth' });
+            });
+        });
+    </script>
+</head>
+<body>
+    <nav>
+        <a href="#"><img src="logo.png" alt="Netflix Logo"></a>
+        <label for="language-select">Language</label>
+        <select name="Language" id="language-select">
+            <option value="English">English</option>
+            <option value="Hindi">Hindi</option>
+        </select>
+        <a href="#" class="nav-item">Home</a>
+        <a href="#" class="nav-item">About</a>
+        <a href="#" class="nav-item">Movies</a>
+        <a href="#" class="nav-item">Service</a>
+        <a href="#" class="nav-item">Contact</a>
+        <a href="#" class="btn">Sign In</a>
+    </nav> 
+
+    <div class="content">
+        <h1>Unlimited movies, TV <br> shows and more.</h1>
+        <h2>Watch anywhere. Cancel anytime.</h2>
+        <p>Ready to watch? Enter your email to create or restart your membership.</p>
+        <div class="mail">
+            <input type="email" placeholder="Email address" aria-label="Email address">
+            <a href="#">Get Started</a>
+        </div>
+    </div>
+
+    <div class="form-wrapper">
+        <h2>Sign In</h2>
+        <form action="#">
+            <div class="form-control">
+                <input type="email" id="email" required>
+                <label for="email">Email or phone number</label>
+            </div>
+            <div class="form-control">
+                <input type="password" id="password" required>
+                <label for="password">Password</label>
+            </div>
+            <button type="submit">Sign In</button>
+            <div class="form-help"> 
+                <div class="remember-me">
+                    <input type="checkbox" id="remember-me">
+                    <label for="remember-me">Remember me</label>
+                </div>
+                <a href="#">Need help?</a>
+            </div>
+        </form>
+        <p>New to Netflix? <a href="#">Sign up now</a></p>
+        <small>
+            This page is protected by Google reCAPTCHA to ensure you're not a bot. 
+            <a href="#">Learn more.</a>
+        </small>
+    </div>
+</body>
+</html>
+
+
